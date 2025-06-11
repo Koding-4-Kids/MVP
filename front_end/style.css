@@ -1,0 +1,5 @@
+#chat-box { max-width: 600px; margin: auto; padding: 1rem; }
+#messages { height: 300px; overflow-y: scroll; border: 1px solid #ccc; padding: 10px; }
+.user, .blossom { margin: 10px 0; }
+.user { text-align: right; }
+.blossom { text-align: left; }
