@@ -16,7 +16,11 @@ async function sendMessage() {
 
 function addMessage(sender, text, cls) {
   const msgDiv = document.createElement("div");
-  msgDiv.className = cls;
+  msgDiv.className = cls === 'user' ? 'my-2 text-right' : 'my-2 text-left';
   msgDiv.textContent = `${sender}: ${text}`;
   document.getElementById("messages").appendChild(msgDiv);
+}
+function clearMessage(){
+  const msgDiv = document.getElementById('messages')
+  msgDiv.textContent = ''
 }

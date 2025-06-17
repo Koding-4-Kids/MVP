@@ -1,7 +1,49 @@
-<div id="chat-box">
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8" />
     <link rel="stylesheet" href="style.css">
-  <div id="messages"></div>
-  <input type="text" id="user-input" placeholder="Ask Blossom a question..." />
-  <button onclick="sendMessage()">Send</button>
+    <title>K4K</title>
+</head>
+<body>
+
+
+<nav class="bg-white">
+  <div class="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
+    <div class="hidden w-full md:block md:w-auto" id="navbar-default">
+      <ul class="flex flex-col md:flex-row md:space-x-8">
+        <li>
+          <img class="h-16 w-16 -mt-4" src="public/transparentk4k.png" alt="">
+        </li>
+        <li>
+          <a  href="#">Home</a>
+        </li>
+        <li>
+          <a href="#" >About Us</a>
+        </li>
+        <li>
+          <a href="#" >Lessons</a>
+        </li>
+        <li>
+          <a href="#" >Pricing(beta)</a>
+        </li>
+        <li>
+          <a href="#">Contact</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<div id="chat-box" class="mr-32 max-w-xl mx-auto p-4">
+  <div id="messages" class="h-72 overflow-y-scroll border border-gray-300 p-2"></div>
+  <input type="text" id="user-input" placeholder="Ask Blossom a question..." class="w-full mt-2 p-2 border rounded" />
+  <button onclick="sendMessage()" class="mt-2 px-4 py-2 bg-pink-300 text-white rounded">Send</button>
+  <button onclick="clearMessage()" class="mt-2 px-4 py-2 bg-pink-300 text-white rounded">Clear</button>
 </div>
+</body>
 <script src="script.js"></script>
+<script src="https://cdn.tailwindcss.com"></script>
+</html>
+
+
